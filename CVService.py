@@ -1,15 +1,19 @@
-import cv2
+from picamera2 import Picamera2
+import time
 
-cap = cv2.VideoCapture(0)
+picam2 = Picamera2()
+# Configure the camera
+config = picam2.create_preview_configuration()
+picam2.configure(config)
+picam2.start()
 
-while True:
-    ret, frame = cap.read()
+# Start the preview window
+picam2.start_preview()
 
-    if ret:
-        cv2.imshow("camera", frame)
-
-    if cv2.waitKey(1) == ord('q'):
-        break
-
-cap.release()
-cv2.destroyAllWindows()
+try:
+    while True:
+        time.sleep(1) # Keeps the script running to hold the window
+except KeyboardInterrupt:
+    pass
+finally:
+    picam2.stop()
