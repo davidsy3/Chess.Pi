@@ -1,19 +1,3 @@
-Skip to content
- 
-Search Gists
-Search...
-All gists
-Back to GitHub
-@gilbertfrancois
-gilbertfrancois/pi_camera.py
-Last active 4 years ago • Report abuse
-Code
-Revisions
-3
-Clone this repository at &lt;script src=&quot;https://gist.github.com/gilbertfrancois/82d18b8531651fe27e875a41409e1096.js&quot;&gt;&lt;/script&gt;
-<script src="https://gist.github.com/gilbertfrancois/82d18b8531651fe27e875a41409e1096.js"></script>
-Raspberry Pi Camera test with python
-pi_camera.py
 import cv2
 from picamera import PiCamera
 from picamera.array import PiRGBArray
@@ -63,19 +47,3 @@ def capture_still():
 if __name__ == "__main__":
     # capture_still()
     capture_video()
-@davidsy3
-Comment
- 
-Leave a comment
-Footer
-© 2026 GitHub, Inc.
-Footer navigation
-Terms
-Privacy
-Security
-Status
-Community
-Docs
-Contact
-Manage cookies
-Do not share my personal information
